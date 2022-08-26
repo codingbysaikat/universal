@@ -416,26 +416,28 @@ section {
 }
 
 /* experience section css */
-.experient .container{
+.experient .container {
     text-align: center;
     padding-top: 8rem;
 }
-.experient .container h6{
-  font-style: normal;
-  color: #FD9535;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 32px;
+
+.experient .container h6 {
+    font-style: normal;
+    color: #FD9535;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
 }
 
-.experient .container h2{
+.experient .container h2 {
     font-weight: 400;
     font-size: 48px;
     line-height: 64px;
     color: #282938;
     padding: 1.5rem 0;
 }
-.experient .container p{
+
+.experient .container p {
     font-size: 16px;
     font-weight: 700;
     line-height: 28px;
@@ -443,25 +445,29 @@ section {
     font-style: normal;
     opacity: 0.7;
 }
-.experient .container .experience-box{
+
+.experient .container .experience-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:2.5rem;
+    gap: 2.5rem;
     text-align: left;
     padding-top: 8rem;
 }
-.experient .container .experience-box .exeprience-child-box{
+
+.experient .container .experience-box .exeprience-child-box {
     padding: 10px 0px;
     margin: 10px 0px;
 
 }
-.experient .container .experience-box .exeprience-child-box h3{
+
+.experient .container .experience-box .exeprience-child-box h3 {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
 }
-.experient .container .experience-box .exeprience-child-box p{
+
+.experient .container .experience-box .exeprience-child-box p {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -469,61 +475,71 @@ section {
     color: #282938;
     opacity: 0.7;
 }
-.experient .container .experience-box .exeprience-child-box a{
+
+.experient .container .experience-box .exeprience-child-box a {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 32px;
     color: #FD9535;
 }
-.contact{
+/* start contact section */
+.contact .contact-continer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax( 40rem, 1fr ));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     color: #FFFFFF;
+
 }
-.contact .image{
+
+.contact .contact-continer .image {
     background: url(../images/woman-writing-on-paper-3228878.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 4rem;
     background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: soft-light;
     overflow: hidden;
     background-position: center;
-    
+    text-align: center;
+    padding: 10%;
+
 }
-.contact .image h2{
+
+.contact .contact-continer .image h2 {
     font-weight: 400;
     font-size: 44px;
     line-height: 50px;
-    
+
+
 }
-.contact .image p{
+
+.contact .contact-continer .image p {
     font-weight: 700;
     font-size: 16px;
     line-height: 28px;
     padding: 13px 0px;
-    
-}
-.contact .form{
-    background: linear-gradient(270deg, #FF572F 0%, #FFA63D 97.59%);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding: 4rem;
 
 }
-.contact .form h4{
+
+.contact .contact-continer .form {
+    background: linear-gradient(270deg, #FF572F 0%, #FFA63D 97.59%);
+    padding: 4rem;
+
+}
+
+.contact .contact-continer .form h4 {
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
-    
+
 }
-.contact .form p{
+
+.contact .contact-continer .form p {
     font-weight: 700;
     font-size: 16px;
     line-height: 28px;
 }
-.contact .form form input[type=text]{
+
+.contact .contact-continer .form form input[type=text] {
     width: 100%;
     padding: 1.3rem;
     font-size: 1.2rem;
@@ -532,18 +548,147 @@ section {
     border-radius: 8px;
     margin-top: 2rem;
 }
-.contact .form form input[type=submit]{
+
+.contact .form form input[type=submit] {
     width: 100%;
     padding: 0.9rem;
     font-size: 16px;
-    background:none;
+    background: none;
     margin-top: 2rem;
     border: 3px solid #FFFFFF;
     border-radius: 40px;
     color: #FFFFFF;
     font-weight: 700;
+    cursor: pointer;
+
+}
+/* review section css */
+.review .review-container{
+    display: flex;
+
+   
+
+}
+.review .review-container .child-review{
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background: #FBFCFE;
+    padding: 2px 10px;
+    margin: 0px 5px;
+   
+}
+.authorname-company{
+    display: flex;
+    justify-content: space-between;
     
 }
+.author-nameandpro h6{
+    font-weight: 700;
+    font-size: 16px;
+    color: #232323;
+}
+.author-nameandpro p{
+    font-weight: 700;
+    font-size: 12px;
+    color: #232323;
+    margin: 2px 0px !important;
+}
+.child-review .author-img img{
+    border-radius: 50%;
+    margin: 0 10px;
+
+}
+
+.review-star{
+    margin: 10px 0px;
+}
+.author-othor p{
+    color: #232323;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 19px;
+    opacity: 0.7;
+    margin: 10px 0px;
+
+
+}
+.child-review-1{
+    text-align: center;
+}
+.child-review-1 h3{
+    font-weight: 400;
+    font-size: 38px;
+    color: #232323;
+}
+
+.child-review-1 p {
+    font-size: 15px;
+}
+
+/* footer css */
+footer{
+    background: black;
+    color:#FFFFFF;
+    
+
+}
+
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 7%;
+    align-items: center;
+}
+.footer-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 88px;
+}
+.footer-container .footer-menu h4{
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0.7;
+
+
+}
+
+
+.footer-container ul li{
+    list-style: none;
+    padding: .5rem 0;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.footer-container ul li a{
+    color: #FBFCFE;
+    opacity: 0.7;
+
+
+}
+
+.contact-info div{
+    padding: .5rem 0;
+    font-size: 14px; 
+    font-weight: 400;
+    opacity: 0.7;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+
+
+
+
+
+
+
 /* media query */
 @media(max-width:1056px) {
 
@@ -570,9 +715,15 @@ section {
     }
 }
 
-@media(max-width:830px) {
+@media(max-width:832px) {
     .main-mothod .left-box .over-left {
         padding: 5rem 2rem 0rem 2rem;
+    }
+    .review .review-container{
+        display: block;
+    }
+    .review .review-container .child-review {
+        margin: 38px 0px;
     }
 }
 
@@ -667,12 +818,34 @@ section {
     .view-more {
         padding: 20px 0px;
     }
-    .experient .container p{
+
+    .experient .container p {
         font-size: 10px;
         line-height: 18px;
     }
-}
+    .contact .contact-continer .form h4{
+        font-size: 27px;
+    }
+    .contact .contact-continer .form p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .contact .form form input[type=submit]{
+        font-size: 12px;
+    }
+    .main-mothod .left-box .over-left a{
+        font-size: 13px;
+    }
 
+}
+@media(max-width:300px){
+    .home .content a span img{
+        width: 13px;
+    }
+    .home .content a {
+        font-size: 11px;
+    }
+}
 
 
 
@@ -707,5 +880,41 @@ section {
 
     .btn {
         padding: 8px 14px;
+    }
+
+    .contact .image h2 {
+        font-size: 29px;
+        line-height: 35px;
+    }
+
+    .contact .image p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    html {
+        font-size: 40%;
+    }
+
+}
+@media(max-width:955px){
+    .footer-container{
+        display: block;
+        
+    }
+    .footer-menu{
+        margin-top: 48px;
+        column-gap: 0;
+    }
+}
+@media(max-width:554px){
+    .footer-container .footer-menu h4{
+        font-size: 12px;
+    }
+    .footer-container ul li{
+        font-size: 9px;
+    }
+    .contact-info div{
+        font-size: 9px;
     }
 }
